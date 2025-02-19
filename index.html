@@ -2,18 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Redirecting... | MapQuest </title>
+      <title>はじめに | MapQuest </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Redirecting... | MapQuest ">
+      <meta name="title" content="はじめに | MapQuest ">
       
-      <meta name="description" content="Redirect to SDK folder if not in SDK path.">
-      <link rel="icon" href="favicon.ico">
-      <link rel="stylesheet" href="public/docfx.min.css">
-      <link rel="stylesheet" href="public/main.css">
-      <meta name="docfx:navrel" content="toc.html">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
       <meta name="docfx:tocrel" content="toc.html">
       
-      <meta name="docfx:rel" content="">
+      <meta name="docfx:rel" content="../">
       
       
       
@@ -30,7 +30,7 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./public/docfx.min.js"></script>
+      <script type="module" src="./../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
@@ -44,7 +44,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="/SDK/index.html">
-            <img id="logo" class="svg" src="logo.svg" alt="MapQuest">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapQuest">
             MapQuest
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,30 +63,46 @@
     </header>
 
     <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
 
       <div class="content">
         <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
 
         </div>
 
         <article data-uid="">
+<h1 id="はじめに">はじめに</h1>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Redirecting...</title>
-    <script>
-        const currentURL = window.location.pathname;
-        
-        if (!currentURL.startsWith('/SDK/')) {
-            window.location.href = "/SDK/";
-        }
-    </script>
-</head>
-<body>
-    <p>If you are not redirected, please check the URL.</p>
-</body>
-</html>
+<p>このたびは、回送計画SDKをご利用いただき、誠にありがとうございます。</p>
+<p>回送計画SDKは、遺伝的アルゴリズムを使用した回送計画を開発キットです。<br>
+遺伝的アルゴリズムを利用することで自動的に適切な回送計画を計画することができます。<br>
+簡単・便利なプログラムインターフェースを使って、高性能な回送計画を「より簡単」に「より短期間」で構築する事ができます。</p>
+<p>このマニュアルを読んでビジネスに回送計画SDKをご活用いただければ幸いです。</p>
+<h2 id="目次">目次</h2>
+<ol>
+<li><p><a href="Docs/reference/reference.html">プログラマーレファレンス</a><br>
+回送計画SDKの説明や構成について説明します。</p>
+</li>
+<li><p><a href="Docs/howto/howto.html">利用方法</a><br>
+回送計画SDKを利用するサンプルコードについて説明します。</p>
+</li>
+<li><p><a href="api/MapQuest.GeneticAlgorithm.GeneticAlgorithm.html">APIレファレンス</a><br>
+回送計画のAPIレファレンスです。</p>
+</li>
+</ol>
 
 </article>
 
